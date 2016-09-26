@@ -28,7 +28,7 @@ class ArticlesController extends AppController{
         }
         $this->set('article', $article);
 
-        $categories = $this->Article->Categories->find('treeList');
+        $categories = $this->Articles->Categories->find('treeList');
         $this->set(compact('categories'));
     }
     
