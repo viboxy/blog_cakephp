@@ -16,7 +16,7 @@ class CategoriesFixture extends TestFixture
      * @var array
      */
     // @codingStandardsIgnoreStart
-    public $fields = [
+    /*public $fields = [
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'parent_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'lft' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
@@ -40,7 +40,7 @@ class CategoriesFixture extends TestFixture
      *
      * @var array
      */
-    public $records = [
+    /*public $records = [
         [
             'id' => 1,
             'parent_id' => 1,
@@ -51,5 +51,5 @@ class CategoriesFixture extends TestFixture
             'created' => '2016-09-26 04:31:45',
             'modified' => '2016-09-26 04:31:45'
         ],
-    ];
+    ];*/
 }

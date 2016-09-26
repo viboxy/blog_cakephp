@@ -35,9 +35,9 @@ class CategoriesControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    public function testView()
+    public function testView($id = null)
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        //$this->markTestIncomplete('Not implemented yet.');
     }
 
     /**

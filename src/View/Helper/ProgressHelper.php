@@ -10,5 +10,9 @@ class ProgressHelper extends Helper{
                 <div class="progress-bar" style="width: %s%%"></div>
             </div>', $width);
     }
+    
+    public function checkOne($value){
+        return '|'.$value.'|';
+    }
 }
 ?>

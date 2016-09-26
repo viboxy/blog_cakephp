@@ -30,7 +30,7 @@ class CreateCategories extends AbstractMigration
         ]);
         $table->addColumn('name', 'string', [
             'default' => null,
-            'limit' => 255,
+            'limit' => 100,
             'null' => false,
         ]);
         $table->addColumn('description', 'string', [

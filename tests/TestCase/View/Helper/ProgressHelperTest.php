@@ -20,5 +20,9 @@ class ProgressHelperTest extends TestCase{
         $result = $this->Progress->bar(33.333333);
         $this->assertContains('width: 33%', $result);
     }
+    public function testCheckOne(){
+        $result = $this->Progress->checkOne(30);
+        $this->assertContains('|30|', $result);
+    }
 }
 ?>
