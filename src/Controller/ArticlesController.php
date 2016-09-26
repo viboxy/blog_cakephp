@@ -27,6 +27,9 @@ class ArticlesController extends AppController{
             $this->Flash->error(__('Unable to add your article'));
         }
         $this->set('article', $article);
+
+        $categories = $this->Article->Categories->find('treeList');
+        $this->set(compact('categories'));
     }
     
     public function edit($id = null){
