@@ -1,14 +1,32 @@
 <?php
 namespace App\Controller;
 
+
 class ArticlesController extends AppController{
     public function initialize(){
         parent::initialize();
     }
 
-    public function index(){
-        $articles = $this->Articles->find('all');
-        $this->set(compact('articles'));
+    public $helpers = ['Form', 'Html'];
+
+    public function index($short = null){
+        if($this->request->is('post')){
+            $article = $this->Articles->newEntity($this->request->data);
+            if($this->Article->save($article)){
+                return $this->redirect(['action' => 'index']);
+            }
+        }
+        if(!empty($short)){
+            $result = $this->Article->find('all',[
+                'field' => ['id', 'title']
+            ]);
+        }else{
+            $result = $this->Articles->find();
+        }
+        $this->set([
+            'title' => 'Articles',
+            'articles' => $result
+        ]);
     }
 
     public function view($id = null){

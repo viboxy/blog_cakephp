@@ -32,13 +32,13 @@ class PagesControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    public function testMutlipleGet()
+    /*public function testMutlipleGet()
     {
         $this->get('/');
         $this->assertResponseOk();
         $this->get('/');
         $this->assertResponseOk();
-    }
+    }*/
 
     /**
      * testDisplay method
